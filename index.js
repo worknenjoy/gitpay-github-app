@@ -14,12 +14,13 @@ module.exports = app => {
     const payload = context.payload
     const options = {
       method: 'POST',
-        uri: 'http://gitpay.me/webhooks/github',
+        uri: 'webhooks/github',
+        baseUrl: 'https://gitpay.me/',
         body: payload,
         simple: false,
         resolveWithFullResponse: true,
-        followRedirect: true,
-        followAllRedirects: true,
+        followRedirect: false,
+        followAllRedirects: false,
         json: true, // Automatically stringifies the body to JSON
         headers: {
           'Content-Type': 'application/json'

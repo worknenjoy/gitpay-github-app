@@ -34,7 +34,7 @@ describe('My Probot app', () => {
       .reply(200)
 
     // Test a call to webhook on the application
-    nock('http://gitpay.me')
+    nock('https://gitpay.me')
       .post('/webhooks/github', (body) => {
         expect(body).toBeDefined()
         return body
