@@ -22,7 +22,7 @@ module.exports = app => {
         followAllRedirects: false,
         json: true, // Automatically stringifies the body to JSON
         headers: {
-          'Content-Type': 'Application/json'
+          'Content-Type': 'application/json'
         }
     }
     try {
