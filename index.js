@@ -16,6 +16,7 @@ module.exports = app => {
       method: 'POST',
         uri: 'http://gitpay.me/webhooks/github',
         body: payload,
+        simple: false,
         resolveWithFullResponse: true,
         json: true // Automatically stringifies the body to JSON
     }
