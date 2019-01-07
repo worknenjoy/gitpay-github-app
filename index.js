@@ -27,6 +27,7 @@ module.exports = app => {
       const taskData = JSON.parse(request.request.body)
       const template = readFileSync('./first-comment.md', 'utf8')
       const commentContent = template.toString()
+      console.log('task data', taskData)
       const parsedCommentContent = tpl(commentContent, [taskData.task.url, taskData.task.url])
       console.log(parsedCommentContent)
       const issueComment = context.issue({ body: parsedCommentContent })
