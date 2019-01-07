@@ -20,7 +20,10 @@ module.exports = app => {
         resolveWithFullResponse: true,
         followRedirect: false,
         followAllRedirects: false,
-        json: true // Automatically stringifies the body to JSON
+        json: true, // Automatically stringifies the body to JSON
+        headers: {
+          'Content-Type': 'Application/json'
+        }
     }
     try {
       const request = await rp(options)
