@@ -21,6 +21,8 @@ module.exports = app => {
     }
     try {
       const request = await rp(options)
+      console.log('request response', request)
+      console.log('request body', request.request.body)
       const taskData = JSON.parse(request.request.body)
       const template = readFileSync('./first-comment.md', 'utf8')
       const commentContent = template.toString()
