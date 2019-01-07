@@ -18,6 +18,8 @@ module.exports = app => {
         body: payload,
         simple: false,
         resolveWithFullResponse: true,
+        followRedirect: false,
+        followAllRedirects: false,
         json: true // Automatically stringifies the body to JSON
     }
     try {
