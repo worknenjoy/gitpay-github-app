@@ -1,16 +1,14 @@
 
-### 🆕 Welcome to Gitpay
+### 🆕 Bem vindo ao Gitpay
 
-Gitpay is an Open Source platform to reward contributors to get thinks done 💝
+Gitpay é uma plataforma Open Source que oferece recompensas para quem completa tarefas 💝
 
-[About Gitpay platform](https://gitpay.me).
+[Sobre a plataforma](https://gitpay.me).
 
-For portuguese, you can [access the portuguese version](first-comment-pt-br.md)
-
-### 📋 Step by Step
+### 📋 Passo a passo
 
 - [x] 🔔 ***Issue open*** an issue was created
-- [x] 👌 **Issue added on Gitpay** this issue was added on gitpay [{{url}}]({{url}})
+- [ ] 👌 **Issue added on Gitpay** this issue is imported on Gitpay to track the payment
 - [ ] 📝 **Add bounties** A bounty is added to get things done
 - [ ] 📝 **Set a deadline** A deadline to finish the task (optional)
 - [ ] 💾 **A contributor is interested** You can show interest on the task page clicking in "I'm interested" 
@@ -18,11 +16,6 @@ For portuguese, you can [access the portuguese version](first-comment-pt-br.md)
 - [ ] 🔀 **You can be assigned**. You can be assigned, you should work on the task and send a Pull Request.
 - [ ] 💬 **Review** Ask in comments for a review :)
 - [ ] 🏁 **Approved** Once approved you will receive your payment
-
-### 📋 Task status
-- [x] ***OPEN***
-- [ ] ***IN PROGRESS***
-- [ ] ***DONE***
 
 ### Good to know
 
@@ -33,5 +26,6 @@ For portuguese, you can [access the portuguese version](first-comment-pt-br.md)
 3. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)
 
 ### 🤔❓ Questions
+
 Leave a comment below!
 This issue was created by [Gitpay Bot](https://github.com/worknenjoy/gitpay-github-app).

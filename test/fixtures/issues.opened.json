@@ -3,13 +3,16 @@
   "issue": {
     "number": 1,
     "user": {
-      "login": "hiimbex"
+      "login": "alexanmtz"
     }
   },
   "repository": {
-    "name": "testing-things",
+    "name": "test-repo-gitpay-github-app",
     "owner": {
-      "login": "hiimbex"
+      "login": "alexanmtz"
     }
+  },
+  "task": {
+    "url": "https://example.com"
   }
 }

@@ -22,14 +22,22 @@ describe('My Probot app', () => {
   test('creates a comment when an issue is opened', async () => {
     // Test that we correctly return a test token
     nock('https://api.github.com')
-      .post('/app/installations/2/access_tokens')
+      .post('/app/installations/23013/access_tokens')
       .reply(200, { token: 'test' })
 
     // Test that a comment is posted
     nock('https://api.github.com')
-      .post('/repos/hiimbex/testing-things/issues/1/comments', (body) => {
+      .post('/repos/alexanmtz/test-repo-gitpay-github-app/issues/1/comments', (body) => {
         expect(body).toBeDefined()
         return true
+      })
+      .reply(200)
+
+    // Test a call to webhook on the application
+    nock('http://gitpay.me')
+      .post('/webhooks/github', (body) => {
+        expect(body).toBeDefined()
+        return body
       })
       .reply(200)
 
