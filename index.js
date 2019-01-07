@@ -18,8 +18,8 @@ module.exports = app => {
         body: payload,
         simple: false,
         resolveWithFullResponse: true,
-        followRedirect: false,
-        followAllRedirects: false,
+        followRedirect: true,
+        followAllRedirects: true,
         json: true, // Automatically stringifies the body to JSON
         headers: {
           'Content-Type': 'application/json'
