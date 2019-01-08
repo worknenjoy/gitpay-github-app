@@ -37,9 +37,13 @@ describe('My Probot app', () => {
     nock('https://gitpay.me')
       .post('/webhooks/github', (body) => {
         expect(body).toBeDefined()
-        return body
+        return true
       })
-      .reply(200)
+      .reply(200, {
+        "task": {
+          "url": "https://example.com"
+        }
+      })
 
     // Receive a webhook event
     await probot.receive({ name: 'issues', payload })

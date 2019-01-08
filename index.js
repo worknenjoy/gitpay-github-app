@@ -11,28 +11,26 @@ module.exports = app => {
   // Your code here
   app.log('Yay, the app was loaded!')
   app.on('issues.opened', async context => {
-    const payload = context.payload
-    const options = {
-      method: 'POST',
-        uri: 'webhooks/github',
-        baseUrl: 'https://gitpay.me/',
-        body: payload,
-        simple: false,
-        resolveWithFullResponse: true,
-        followRedirect: false,
-        followAllRedirects: false,
-        json: true, // Automatically stringifies the body to JSON
-        headers: {
-          'Content-Type': 'application/json'
-        }
-    }
     try {
+      const payload = context.payload
+      const options = {
+        method: 'POST',
+          uri: 'webhooks/github',
+          baseUrl: 'https://gitpay.me/',
+          body: payload,
+          simple: true,
+          resolveWithFullResponse: true,
+          followRedirect: false,
+          followAllRedirects: false,
+          json: true, // Automatically stringifies the body to JSON
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.TOKEN}`
+          }
+      }
       const request = await rp(options)
-      // console.log('request response', request)
-      console.log('request body', request.request.body)
-      console.log('request json', JSON.parse(request.request.body))
-      const bodyJSON = JSON.parse(request.request.body)
-      console.log('task', bodyJSON.task)
+      console.log(request)
+      const bodyJSON = request.body
       const taskData = bodyJSON.task
       const template = readFileSync('./first-comment.md', 'utf8')
       const commentContent = template.toString()
