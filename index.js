@@ -28,10 +28,9 @@ module.exports = app => {
     }
     try {
       const request = await rp(options)
-      //console.log('request response', request)
-      //console.log('request body', request.request.body)
-      //console.log('request json', JSON.parse(request.request.body))
-      console.log('other way to get a response', request.request.responseContent.request.body)
+      // console.log('request response', request)
+      console.log('request body', request.request.body)
+      console.log('request json', JSON.parse(request.request.body))
       const bodyJSON = JSON.parse(request.request.body)
       console.log('task', bodyJSON.task)
       const taskData = bodyJSON.task
