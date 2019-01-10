@@ -3,7 +3,8 @@ const nock = require('nock')
 const myProbotApp = require('..')
 const { Probot } = require('probot')
 // Requiring our fixtures
-const payload = require('./fixtures/issues.opened')
+const payloadIssueOpened = require('./fixtures/issues.opened')
+const payloadIssueLabeled = require('./fixtures/issues.labeled')
 
 nock.disableNetConnect()
 
@@ -46,8 +47,39 @@ describe('My Probot app', () => {
       })
 
     // Receive a webhook event
-    await probot.receive({ name: 'issues', payload })
+    await probot.receive({ name: 'issues', payload: payloadIssueOpened })
   })
+
+  test('nofity community when a label is set to notify', async () => {
+    // Test that we correctly return a test token
+    nock('https://api.github.com')
+      .post('/app/installations/23013/access_tokens')
+      .reply(200, { token: 'test' })
+
+    // Test that a comment is posted
+    nock('https://api.github.com')
+      .post('/repos/alexanmtz/test-repo-gitpay-github-app/issues/1/labels', (body) => {
+        expect(body).toBeDefined()
+        return true
+      })
+      .reply(200)
+
+    // Test a call to webhook on the application
+    nock('https://gitpay.me')
+      .post('/webhooks/github', (body) => {
+        expect(body).toBeDefined()
+        return true
+      })
+      .reply(200, {
+        "task": {
+          "url": "https://example.com"
+        }
+      })
+
+    // Receive a webhook event
+    await probot.receive({ name: 'labeled', payload: payloadIssueLabeled })
+  })
+
 })
 
 // For more information about testing with Jest see:

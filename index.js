@@ -29,14 +29,50 @@ module.exports = app => {
           }
       }
       const request = await rp(options)
-      console.log(request)
       const bodyJSON = request.body
       const taskData = bodyJSON.task
       const template = readFileSync('./first-comment.md', 'utf8')
       const commentContent = template.toString()
-      console.log('task data', taskData)
       const parsedCommentContent = tpl(commentContent, [taskData.url, taskData.url])
       console.log(parsedCommentContent)
+      const issueComment = context.issue({ body: parsedCommentContent })
+      return context.github.issues.createComment(issueComment)
+    } catch (e) {
+      console.log(e)
+      throw new Error(e)
+    }
+  })
+
+  app.on('issues.labeled', async context => {
+    try {
+      const payload = context.payload
+      console.log(context.payload)
+      const labels = payload.issue.labels
+      const notifyLabel = labels.filter(item => item.name === 'notify')
+
+      if(!notifyLabel.length) return context.github.issues
+
+      const options = {
+        method: 'POST',
+          uri: 'webhooks/github',
+          baseUrl: 'https://gitpay.me/',
+          body: payload,
+          simple: true,
+          resolveWithFullResponse: true,
+          followRedirect: false,
+          followAllRedirects: false,
+          json: true, // Automatically stringifies the body to JSON
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.TOKEN}`
+          }
+      }
+      const request = await rp(options)
+      const bodyJSON = request.body
+      const taskData = bodyJSON.task
+      const template = readFileSync('./notify-comment.md', 'utf8')
+      const commentContent = template.toString()
+      const parsedCommentContent = tpl(commentContent, [taskData.url])
       const issueComment = context.issue({ body: parsedCommentContent })
       return context.github.issues.createComment(issueComment)
     } catch (e) {
