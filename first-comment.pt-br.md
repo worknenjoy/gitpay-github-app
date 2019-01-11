@@ -7,25 +7,25 @@ Gitpay é uma plataforma Open Source que oferece recompensas para quem completa 
 
 ### 📋 Passo a passo
 
-- [x] 🔔 ***Issue open*** an issue was created
-- [ ] 👌 **Issue added on Gitpay** this issue is imported on Gitpay to track the payment
-- [ ] 📝 **Add bounties** A bounty is added to get things done
-- [ ] 📝 **Set a deadline** A deadline to finish the task (optional)
-- [ ] 💾 **A contributor is interested** You can show interest on the task page clicking in "I'm interested" 
-- [ ] 💾 **You can offer** You can make an offer
-- [ ] 🔀 **You can be assigned**. You can be assigned, you should work on the task and send a Pull Request.
-- [ ] 💬 **Review** Ask in comments for a review :)
-- [ ] 🏁 **Approved** Once approved you will receive your payment
+- [x] 🔔 ***Incidente aberto*** Um incidente foi criado
+- [ ] 👌 **A tarefa é adicionada ao Gitpay** Esta tarefa é inserida no Gitpay para gerenciar o pagamento da recompensa
+- [ ] 📝 **Adicione recompensas** Uma recompensa é adicionada para tarefa ser completada
+- [ ] 📝 **Escolha uma data para conclusão** Uma data de conclusão pode ser escolhida para a tarefa (opcional)
+- [ ] 💾 **Um contribuidor é escolhido** Você pode demonstrar interesse em resolver a tarefa indo em "Estou interessado"
+- [ ] 💾 **Faça sua oferta** Você também pode fazer ofertas por qual valor você faria
+- [ ] 🔀 **Você pode ser escolhido**. Você pode ser escolhido, propor uma solução para a tarefa e enviar um Pull Request
+- [ ] 💬 **Review** Peça por um feedback e faça os ajustes necessários :)
+- [ ] 🏁 **Approved** Seu código é aprovado e você recebe a recompensa
 
-### Good to know
+### O que você precisa saber
 
-1. If you are familiar with the terminal or would like to learn it, [here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) on how to send a pull request using the terminal.
+1. Se você não está acostumado com o terminal e quer aprender, [tem um excelente tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) de como enviar Pull requests usando o terminal
 
-2. For a more compreenhensive guide to create the Pull Request properly, you can access: https://guides.github.com/activities/hello-world/
+2. Para aprender a criar pull requests temos este guia: https://guides.github.com/activities/hello-world/
 
-3. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)
+3. Você pode também [editar os arquivos diretamente no seu browser](https://help.github.com/articles/editing-files-in-your-repository/)
 
-### 🤔❓ Questions
+### 🤔❓ Perguntas
 
-Leave a comment below!
+Deixe um comentário abaixo!
 This issue was created by [Gitpay Bot](https://github.com/worknenjoy/gitpay-github-app).
