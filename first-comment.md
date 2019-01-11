@@ -5,7 +5,7 @@ Gitpay is an Open Source platform to reward contributors to get thinks done 💝
 
 [About Gitpay platform](https://gitpay.me).
 
-For portuguese, you can [access the portuguese version](first-comment.pt-br.md)
+For portuguese, you can [access the portuguese version](https://github.com/worknenjoy/gitpay-github-app/blob/master/first-comment.pt-br.md)
 
 ### 📋 Step by Step
 
