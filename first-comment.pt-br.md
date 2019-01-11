@@ -28,4 +28,4 @@ Gitpay é uma plataforma Open Source que oferece recompensas para quem completa 
 ### 🤔❓ Perguntas
 
 Deixe um comentário abaixo!
-This issue was created by [Gitpay Bot](https://github.com/worknenjoy/gitpay-github-app).
+Este incidente foi criado pelo [Gitpay App](https://github.com/worknenjoy/gitpay-github-app).
