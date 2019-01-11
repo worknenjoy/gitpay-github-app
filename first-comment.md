@@ -34,4 +34,4 @@ For portuguese, you can [access the portuguese version](https://github.com/workn
 
 ### 🤔❓ Questions
 Leave a comment below!
-This issue was created by [Gitpay Bot](https://github.com/worknenjoy/gitpay-github-app).
+This issue was created by [Gitpay App](https://github.com/worknenjoy/gitpay-github-app).
