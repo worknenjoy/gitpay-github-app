@@ -14,7 +14,7 @@ Gitpay é uma plataforma Open Source que oferece recompensas para quem completa 
 - [ ] 📝 **Escolha uma data para conclusão** Uma data de conclusão pode ser escolhida para a tarefa (opcional)
 - [ ] 💾 **Um contribuidor é escolhido** Você pode escolher entre os interessado que desejam resolver esta tarefa
 
-### Para quem deseja resolver
+#### Para quem deseja resolver
 - [ ] 💾 **Um contribuidor é escolhido** Você pode demonstrar interesse em resolver a tarefa indo em "Estou interessado"
 - [ ] 💾 **Faça sua oferta** Você também pode fazer ofertas por qual valor você faria
 - [ ] 🔀 **Você pode ser escolhido**. Você pode ser escolhido, propor uma solução para a tarefa e enviar um Pull Request
