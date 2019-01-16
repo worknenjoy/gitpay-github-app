@@ -9,10 +9,14 @@ For portuguese, you can [access the portuguese version](https://github.com/workn
 
 ### 📋 Step by Step
 
+#### If you are the task owner that created this issue
 - [x] 🔔 ***Issue open*** an issue was created
 - [x] 👌 **Issue added on Gitpay** this issue was added on gitpay [{{url}}]({{url}})
 - [ ] 📝 **Add bounties** A bounty is added to get things done
 - [ ] 📝 **Set a deadline** A deadline to finish the task (optional)
+- [ ] 💾 **Choose a contributor interested** You can choose someone interested that will be able to solve your issue 
+
+#### If you want to contribute and be rewarded
 - [ ] 💾 **A contributor is interested** You can show interest on the task page clicking in "I'm interested" 
 - [ ] 💾 **You can offer** You can make an offer
 - [ ] 🔀 **You can be assigned**. You can be assigned, you should work on the task and send a Pull Request.
