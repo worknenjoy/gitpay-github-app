@@ -12,6 +12,7 @@ Gitpay é uma plataforma Open Source que oferece recompensas para quem completa 
 - [ ] 👌 **A tarefa é adicionada ao Gitpay** Esta tarefa é inserida no Gitpay para gerenciar o pagamento da recompensa
 - [ ] 📝 **Adicione recompensas** Uma recompensa é adicionada para tarefa ser completada
 - [ ] 📝 **Escolha uma data para conclusão** Uma data de conclusão pode ser escolhida para a tarefa (opcional)
+- [ ] 💾 **Um contribuidor é escolhido** Você pode escolher entre os interessado que desejam resolver esta tarefa
 
 ### Para quem deseja resolver
 - [ ] 💾 **Um contribuidor é escolhido** Você pode demonstrar interesse em resolver a tarefa indo em "Estou interessado"
