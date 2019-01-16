@@ -9,7 +9,7 @@ For portuguese, you can [access the portuguese version](https://github.com/workn
 
 ### 📋 Step by Step
 
-#### If you are the task owner that created this issue
+#### If you are the task owner who created this issue
 - [x] 🔔 ***Issue open*** an issue was created
 - [x] 👌 **Issue added on Gitpay** this issue was added on gitpay [{{url}}]({{url}})
 - [ ] 📝 **Add bounties** A bounty is added to get things done
