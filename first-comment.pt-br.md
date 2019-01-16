@@ -7,10 +7,13 @@ Gitpay é uma plataforma Open Source que oferece recompensas para quem completa 
 
 ### 📋 Passo a passo
 
+#### Para quem criou a demanda
 - [x] 🔔 ***Incidente aberto*** Um incidente foi criado
 - [ ] 👌 **A tarefa é adicionada ao Gitpay** Esta tarefa é inserida no Gitpay para gerenciar o pagamento da recompensa
 - [ ] 📝 **Adicione recompensas** Uma recompensa é adicionada para tarefa ser completada
 - [ ] 📝 **Escolha uma data para conclusão** Uma data de conclusão pode ser escolhida para a tarefa (opcional)
+
+### Para quem deseja resolver
 - [ ] 💾 **Um contribuidor é escolhido** Você pode demonstrar interesse em resolver a tarefa indo em "Estou interessado"
 - [ ] 💾 **Faça sua oferta** Você também pode fazer ofertas por qual valor você faria
 - [ ] 🔀 **Você pode ser escolhido**. Você pode ser escolhido, propor uma solução para a tarefa e enviar um Pull Request
