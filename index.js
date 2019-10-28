@@ -49,8 +49,10 @@ module.exports = app => {
       console.log(context.payload)
       const labels = payload.issue.labels
       const notifyLabel = labels.filter(item => item.name === 'notify')
+      const gitpayLabel = labels.filter(item => item.name === 'gitpay')
 
       if(!notifyLabel.length) return context.github.issues
+      if(!gitpayLabel.length) return context.github.issues
 
       const options = {
         method: 'POST',
