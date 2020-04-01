@@ -1,7 +1,7 @@
 
 ### 🆕 Welcome to Gitpay
 
-Gitpay is an Open Source platform to reward contributors to get thinks done 💝
+Gitpay is an Open Source platform to reward contributors to get things done 💝
 
 [About Gitpay platform](https://gitpay.me).
 
