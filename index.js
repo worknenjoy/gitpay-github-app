@@ -3,7 +3,7 @@ const rp = require('request-promise-native')
 
 const tpl = (str, data) => {
   return str.replace(/\{\{(.+?)\}\}/g, function (match) {
-    return data.shift() || match;
+    return data.shift() || match
   })
 }
 
@@ -15,18 +15,18 @@ module.exports = app => {
       const payload = context.payload
       const options = {
         method: 'POST',
-          uri: 'webhooks/github',
-          baseUrl: 'https://gitpay.me/',
-          body: payload,
-          simple: true,
-          resolveWithFullResponse: true,
-          followRedirect: false,
-          followAllRedirects: false,
-          json: true, // Automatically stringifies the body to JSON
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.TOKEN}`
-          }
+        uri: 'webhooks/github',
+        baseUrl: 'https://gitpay.me/',
+        body: payload,
+        simple: true,
+        resolveWithFullResponse: true,
+        followRedirect: false,
+        followAllRedirects: false,
+        json: true, // Automatically stringifies the body to JSON
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.TOKEN}`
+        }
       }
       const request = await rp(options)
       const bodyJSON = request.body
@@ -47,27 +47,21 @@ module.exports = app => {
     try {
       const payload = context.payload
       console.log(context.payload)
-      const labels = payload.issue.labels
-      const notifyLabel = labels.filter(item => item.name === 'notify')
-      const gitpayLabel = labels.filter(item => item.name === 'gitpay')
-
-      if(!notifyLabel.length) return context.github.issues
-      if(!gitpayLabel.length) return context.github.issues
 
       const options = {
         method: 'POST',
-          uri: 'webhooks/github',
-          baseUrl: 'https://gitpay.me/',
-          body: payload,
-          simple: true,
-          resolveWithFullResponse: true,
-          followRedirect: false,
-          followAllRedirects: false,
-          json: true, // Automatically stringifies the body to JSON
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.TOKEN}`
-          }
+        uri: 'webhooks/github',
+        baseUrl: 'https://gitpay.me/',
+        body: payload,
+        simple: true,
+        resolveWithFullResponse: true,
+        followRedirect: false,
+        followAllRedirects: false,
+        json: true, // Automatically stringifies the body to JSON
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.TOKEN}`
+        }
       }
       const request = await rp(options)
       const bodyJSON = request.body
